@@ -22,7 +22,7 @@ OS2Version: 3
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: 1608751085
-ModificationTime: 1676572218
+ModificationTime: 1676590938
 PfmFamily: 49
 TTFWeight: 400
 TTFWidth: 5
@@ -57,8 +57,85 @@ OS2XHeight: 450
 OS2Vendor: 'NONE'
 OS2CodePages: 00000093.00000000
 OS2UnicodeRanges: 00000007.00000000.00000000.00000000
+Lookup: 6 0 0 "thousands calt1" { "thousands calt1-1"  "thousands calt1-2"  "thousands calt1-3"  "thousands calt1-4"  } ['calt' ('DFLT' <'dflt' > 'latn' <'dflt' > 'math' <'dflt' > ) ]
+Lookup: 6 0 0 "thousands calt2" { "thousands calt2-1"  "thousands calt2-2"  } ['calt' ('DFLT' <'dflt' > 'latn' <'dflt' > 'math' <'dflt' > ) ]
+Lookup: 8 0 0 "thousands reverse" { "thousands reverse-1"  "thousands reverse-2"  "thousands reverse-3"  "thousands reverse-4"  } ['calt' ('DFLT' <'dflt' > 'latn' <'dflt' > 'math' <'dflt' > ) ]
+Lookup: 1 0 0 "Tothird" { "Tothird-1"  } []
+Lookup: 1 0 0 "Tosecond" { "Tosecond-1"  } []
+Lookup: 1 0 0 "Tofirst" { "Tofirst-1"  } []
+Lookup: 1 0 0 "Tozeroth" { "Tozeroth-1"  } []
 MarkAttachClasses: 1
 DEI: 91125
+ReverseChain2: revcov "thousands reverse-1" 0 0 0 1
+ 1 0 1
+  Coverage: 119 zero.zeroth one.zeroth two.zeroth three.zeroth four.zeroth five.zeroth six.zeroth seven.zeroth eight.zeroth nine.zeroth
+  FCoverage: 119 zero.zeroth one.zeroth two.zeroth three.zeroth four.zeroth five.zeroth six.zeroth seven.zeroth eight.zeroth nine.zeroth
+  Replace: 109 zero.first one.first two.first three.first four.first five.first six.first seven.first eight.first nine.first
+EndFPST
+ReverseChain2: revcov "thousands reverse-2" 0 0 0 1
+ 1 0 1
+  Coverage: 119 zero.zeroth one.zeroth two.zeroth three.zeroth four.zeroth five.zeroth six.zeroth seven.zeroth eight.zeroth nine.zeroth
+  FCoverage: 109 zero.first one.first two.first three.first four.first five.first six.first seven.first eight.first nine.first
+  Replace: 119 zero.second one.second two.second three.second four.second five.second six.second seven.second eight.second nine.second
+EndFPST
+ReverseChain2: revcov "thousands reverse-3" 0 0 0 1
+ 1 0 1
+  Coverage: 119 zero.zeroth one.zeroth two.zeroth three.zeroth four.zeroth five.zeroth six.zeroth seven.zeroth eight.zeroth nine.zeroth
+  FCoverage: 119 zero.second one.second two.second three.second four.second five.second six.second seven.second eight.second nine.second
+  Replace: 109 zero.third one.third two.third three.third four.third five.third six.third seven.third eight.third nine.third
+EndFPST
+ReverseChain2: revcov "thousands reverse-4" 0 0 0 1
+ 1 0 1
+  Coverage: 119 zero.zeroth one.zeroth two.zeroth three.zeroth four.zeroth five.zeroth six.zeroth seven.zeroth eight.zeroth nine.zeroth
+  FCoverage: 109 zero.third one.third two.third three.third four.third five.third six.third seven.third eight.third nine.third
+  Replace: 109 zero.first one.first two.first three.first four.first five.first six.first seven.first eight.first nine.first
+EndFPST
+ChainSub2: coverage "thousands calt2-2" 0 0 0 1
+ 1 0 3
+  Coverage: 49 zero one two three four five six seven eight nine
+  FCoverage: 49 zero one two three four five six seven eight nine
+  FCoverage: 49 zero one two three four five six seven eight nine
+  FCoverage: 49 zero one two three four five six seven eight nine
+ 1
+  SeqLookup: 0 "Tozeroth"
+EndFPST
+ChainSub2: coverage "thousands calt2-1" 0 0 0 1
+ 1 1 0
+  Coverage: 49 zero one two three four five six seven eight nine
+  BCoverage: 119 zero.zeroth one.zeroth two.zeroth three.zeroth four.zeroth five.zeroth six.zeroth seven.zeroth eight.zeroth nine.zeroth
+ 1
+  SeqLookup: 0 "Tozeroth"
+EndFPST
+ChainSub2: coverage "thousands calt1-4" 0 0 0 1
+ 1 1 0
+  Coverage: 49 zero one two three four five six seven eight nine
+  BCoverage: 109 zero.third one.third two.third three.third four.third five.third six.third seven.third eight.third nine.third
+ 1
+  SeqLookup: 0 "Tosecond"
+EndFPST
+ChainSub2: coverage "thousands calt1-3" 0 0 0 1
+ 1 1 0
+  Coverage: 49 zero one two three four five six seven eight nine
+  BCoverage: 109 zero.first one.first two.first three.first four.first five.first six.first seven.first eight.first nine.first
+ 1
+  SeqLookup: 0 "Tothird"
+EndFPST
+ChainSub2: coverage "thousands calt1-2" 0 0 0 1
+ 1 1 0
+  Coverage: 49 zero one two three four five six seven eight nine
+  BCoverage: 119 zero.second one.second two.second three.second four.second five.second six.second seven.second eight.second nine.second
+ 1
+  SeqLookup: 0 "Tofirst"
+EndFPST
+ChainSub2: coverage "thousands calt1-1" 0 0 0 1
+ 1 1 2
+  Coverage: 49 zero one two three four five six seven eight nine
+  BCoverage: 6 period
+  FCoverage: 49 zero one two three four five six seven eight nine
+  FCoverage: 49 zero one two three four five six seven eight nine
+ 1
+  SeqLookup: 0 "Tosecond"
+EndFPST
 LangName: 1033 "" "" "" "" "" "1.2.0-jesusmgg" "" "" "" "" "" "" "" "Copyright 2023 Jesus Gonzalez+AAoA-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the +ACIA-Software+ACIA), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:+AAoA-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.+AAoA-THE SOFTWARE IS PROVIDED +ACIA-AS IS+ACIA, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.+AAoACgAA" "" "" "Comic Shanns Mono"
 Encoding: UnicodeBmp
 UnicodeInterp: none
@@ -75,7 +152,7 @@ BlueShift 2 10
 EndPrivate
 TeXData: 1 0 0 576716 288358 192238 488639 1048576 192238 783286 444596 497025 792723 393216 433062 380633 303038 157286 324010 404750 52429 2506097 1059062 262144
 AnchorClass2: "aa""" 
-BeginChars: 65541 605
+BeginChars: 65582 646
 
 StartChar: .notdef
 Encoding: 65536 -1 0
@@ -887,6 +964,10 @@ SplineSet
  179.997070312 95.99609375 191.1640625 81.8291015625 205.497070312 71.49609375 c 0
  219.830078125 61.1630859375 238.330078125 55.99609375 260.997070312 55.99609375 c 0
 EndSplineSet
+Substitution2: "Tothird-1" zero.third
+Substitution2: "Tosecond-1" zero.second
+Substitution2: "Tofirst-1" zero.first
+Substitution2: "Tozeroth-1" zero.zeroth
 EndChar
 
 StartChar: one
@@ -941,6 +1022,10 @@ SplineSet
  52.3330078125 45.6669921875 55 55.6669921875 61 65 c 0
  67 74.3330078125 78 79 94 79 c 0
 EndSplineSet
+Substitution2: "Tothird-1" one.third
+Substitution2: "Tosecond-1" one.second
+Substitution2: "Tofirst-1" one.first
+Substitution2: "Tozeroth-1" one.zeroth
 EndChar
 
 StartChar: two
@@ -993,6 +1078,10 @@ SplineSet
  84.9990234375 509.666992188 78.33203125 517.5 74.9990234375 528.5 c 0
  71.666015625 539.5 74.3330078125 553.333007812 83 570 c 0
 EndSplineSet
+Substitution2: "Tothird-1" two.third
+Substitution2: "Tosecond-1" two.second
+Substitution2: "Tofirst-1" two.first
+Substitution2: "Tozeroth-1" two.zeroth
 EndChar
 
 StartChar: three
@@ -1045,6 +1134,10 @@ SplineSet
  397.666992188 344.333007812 435.166992188 327 461.5 303 c 0
  487.833007812 279 501 240 501 186 c 0
 EndSplineSet
+Substitution2: "Tothird-1" three.third
+Substitution2: "Tosecond-1" three.second
+Substitution2: "Tofirst-1" three.first
+Substitution2: "Tozeroth-1" three.zeroth
 EndChar
 
 StartChar: four
@@ -1100,6 +1193,10 @@ SplineSet
  350.000976562 328.665039062 349.500976562 375.33203125 348.500976562 423.999023438 c 0
  347.500976562 472.666015625 345.66796875 518.999023438 343.000976562 562.999023438 c 1
 EndSplineSet
+Substitution2: "Tothird-1" four.third
+Substitution2: "Tosecond-1" four.second
+Substitution2: "Tofirst-1" four.first
+Substitution2: "Tozeroth-1" four.zeroth
 EndChar
 
 StartChar: five
@@ -1158,6 +1255,10 @@ SplineSet
  210.666992188 -17 166.166992188 -6.3330078125 134.5 15 c 0
  102.833007812 36.3330078125 81 58.3330078125 69 81 c 0
 EndSplineSet
+Substitution2: "Tothird-1" five.third
+Substitution2: "Tosecond-1" five.second
+Substitution2: "Tofirst-1" five.first
+Substitution2: "Tozeroth-1" five.zeroth
 EndChar
 
 StartChar: six
@@ -1211,6 +1312,10 @@ SplineSet
  413.993164062 279.002929688 403.326171875 318.669921875 381.993164062 338.002929688 c 0
  360.66015625 357.3359375 331.66015625 367.002929688 294.993164062 367.002929688 c 0
 EndSplineSet
+Substitution2: "Tothird-1" six.third
+Substitution2: "Tosecond-1" six.second
+Substitution2: "Tofirst-1" six.first
+Substitution2: "Tozeroth-1" six.zeroth
 EndChar
 
 StartChar: seven
@@ -1251,6 +1356,10 @@ SplineSet
  60 627 62.5 635.666992188 67.5 643 c 0
  72.5 650.333007812 83.3330078125 655.333007812 100 658 c 0
 EndSplineSet
+Substitution2: "Tothird-1" seven.third
+Substitution2: "Tosecond-1" seven.second
+Substitution2: "Tofirst-1" seven.first
+Substitution2: "Tozeroth-1" seven.zeroth
 EndChar
 
 StartChar: eight
@@ -1319,6 +1428,10 @@ SplineSet
  184.502929688 77.00390625 199.502929688 69.00390625 216.502929688 63.00390625 c 0
  233.502929688 57.00390625 250.3359375 54.00390625 267.002929688 54.00390625 c 0
 EndSplineSet
+Substitution2: "Tothird-1" eight.third
+Substitution2: "Tosecond-1" eight.second
+Substitution2: "Tofirst-1" eight.first
+Substitution2: "Tozeroth-1" eight.zeroth
 EndChar
 
 StartChar: nine
@@ -1372,6 +1485,10 @@ SplineSet
  145.001953125 408.33203125 156.168945312 369.665039062 178.501953125 342.998046875 c 0
  200.834960938 316.331054688 233.66796875 302.998046875 277.000976562 302.998046875 c 0
 EndSplineSet
+Substitution2: "Tothird-1" nine.third
+Substitution2: "Tosecond-1" nine.second
+Substitution2: "Tofirst-1" nine.first
+Substitution2: "Tozeroth-1" nine.zeroth
 EndChar
 
 StartChar: colon
@@ -28859,6 +28976,426 @@ SplineSet
  462.000976562 376 435.000976562 353 393.000976562 343 c 0
  353.000976562 333 324.000976562 376 319.000976562 416 c 0
 EndSplineSet
+EndChar
+
+StartChar: digitsep
+Encoding: 65541 -1 605
+Width: 550
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 13 44 N 1 0 0 1 183.333 -66.2 2
+EndChar
+
+StartChar: zero.zeroth
+Encoding: 65542 -1 606
+Width: 550
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 17 48 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: one.zeroth
+Encoding: 65543 -1 607
+Width: 550
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 18 49 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: two.zeroth
+Encoding: 65544 -1 608
+Width: 550
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 19 50 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: three.zeroth
+Encoding: 65545 -1 609
+Width: 550
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 20 51 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: four.zeroth
+Encoding: 65546 -1 610
+Width: 550
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 21 52 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: five.zeroth
+Encoding: 65547 -1 611
+Width: 550
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 22 53 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: six.zeroth
+Encoding: 65548 -1 612
+Width: 550
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 23 54 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: seven.zeroth
+Encoding: 65549 -1 613
+Width: 550
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 24 55 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: eight.zeroth
+Encoding: 65550 -1 614
+Width: 550
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 25 56 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: nine.zeroth
+Encoding: 65551 -1 615
+Width: 550
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 26 57 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: zero.first
+Encoding: 65552 -1 616
+Width: 550
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 17 48 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: one.first
+Encoding: 65553 -1 617
+Width: 550
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 18 49 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: two.first
+Encoding: 65554 -1 618
+Width: 550
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 19 50 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: three.first
+Encoding: 65555 -1 619
+Width: 550
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 20 51 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: four.first
+Encoding: 65556 -1 620
+Width: 550
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 21 52 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: five.first
+Encoding: 65557 -1 621
+Width: 550
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 22 53 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: six.first
+Encoding: 65558 -1 622
+Width: 550
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 23 54 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: seven.first
+Encoding: 65559 -1 623
+Width: 550
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 24 55 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: eight.first
+Encoding: 65560 -1 624
+Width: 550
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 25 56 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: nine.first
+Encoding: 65561 -1 625
+Width: 550
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 26 57 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: zero.second
+Encoding: 65562 -1 626
+Width: 550
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 17 48 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: one.second
+Encoding: 65563 -1 627
+Width: 550
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 18 49 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: two.second
+Encoding: 65564 -1 628
+Width: 550
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 19 50 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: three.second
+Encoding: 65565 -1 629
+Width: 550
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 20 51 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: four.second
+Encoding: 65566 -1 630
+Width: 550
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 21 52 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: five.second
+Encoding: 65567 -1 631
+Width: 550
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 22 53 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: six.second
+Encoding: 65568 -1 632
+Width: 550
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 23 54 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: seven.second
+Encoding: 65569 -1 633
+Width: 550
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 24 55 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: eight.second
+Encoding: 65570 -1 634
+Width: 550
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 25 56 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: nine.second
+Encoding: 65571 -1 635
+Width: 550
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 26 57 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: zero.third
+Encoding: 65572 -1 636
+Width: 550
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 605 -1 N 1 0 0 1 0 0 2
+Refer: 17 48 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: one.third
+Encoding: 65573 -1 637
+Width: 550
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 605 -1 N 1 0 0 1 0 0 2
+Refer: 18 49 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: two.third
+Encoding: 65574 -1 638
+Width: 550
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 605 -1 N 1 0 0 1 0 0 2
+Refer: 19 50 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: three.third
+Encoding: 65575 -1 639
+Width: 550
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 605 -1 N 1 0 0 1 0 0 2
+Refer: 20 51 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: four.third
+Encoding: 65576 -1 640
+Width: 550
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 605 -1 N 1 0 0 1 0 0 2
+Refer: 21 52 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: five.third
+Encoding: 65577 -1 641
+Width: 550
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 605 -1 N 1 0 0 1 0 0 2
+Refer: 22 53 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: six.third
+Encoding: 65578 -1 642
+Width: 550
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 605 -1 N 1 0 0 1 0 0 2
+Refer: 23 54 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: seven.third
+Encoding: 65579 -1 643
+Width: 550
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 605 -1 N 1 0 0 1 0 0 2
+Refer: 24 55 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: eight.third
+Encoding: 65580 -1 644
+Width: 550
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 605 -1 N 1 0 0 1 0 0 2
+Refer: 25 56 N 1 0 0 1 0 0 2
+EndChar
+
+StartChar: nine.third
+Encoding: 65581 -1 645
+Width: 550
+VWidth: 0
+Flags: HW
+LayerCount: 2
+Fore
+Refer: 605 -1 N 1 0 0 1 0 0 2
+Refer: 26 57 N 1 0 0 1 0 0 2
 EndChar
 EndChars
 EndSplineFont
